@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /Contador.html
+Disallow: /Home.html
+Disallow: /Home2.html
+Disallow: /Web1.html
+Disallow: /Web2.html
+Disallow: /Web3.html
+Disallow: /buscar/
+sitemap: http://www.simplyred.es/sitemap.xml
+
