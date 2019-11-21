@@ -6,5 +6,5 @@ Disallow: /Web1.html
 Disallow: /Web2.html
 Disallow: /Web3.html
 Disallow: /buscar/
-sitemap: http://www.simplyred.es/sitemap.xml
+sitemap: https://www.simplyred.es/sitemap.xml
 
