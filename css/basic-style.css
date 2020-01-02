@@ -369,7 +369,7 @@ BASE (MOBILE) SIZE
 
 /* typography */
 body{
-	background: #000000 url(https://sites.google.com/site/steviewondersoul/simplyred-inicio/Fondo2.jpg) no-repeat center center fixed;
+	background: #000000 url(https://cdn.simplyred.es/images/Fondo2.jpg) no-repeat center center fixed;
 	color:#FFFFFF;
 	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
 	font-size:1em;
@@ -579,7 +579,7 @@ footer ul{
 
 /*colors and backgrounds*/
 body{
-	background: #000000 url(https://sites.google.com/site/steviewondersoul/simplyred-inicio/Fondo2.jpg) no-repeat center center fixed;
+	background: #000000 url(https://cdn.simplyred.es/images/Fondo2.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
