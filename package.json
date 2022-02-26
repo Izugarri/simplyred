@@ -1,14 +1,14 @@
 {
-  "name": "videos",
+  "name": "Simplyred",
   "version": "1.0.0",
-  "description": "videos",
+  "description": "Simplyred",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://git.cloudno.de/git/videomusicajmc/7494-f3a3229ab62a5405793a94f6d7165dc8.git"
+    "url": "https://github.com/Izugarri/simplyred.git"
   },
   "author": "",
   "license": "MIT",
