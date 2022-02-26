@@ -562,7 +562,7 @@ function MT(){
 	var m=0,im=-1;
 	for(i=0;i<FN;++i) if(AR[i]>m) m=AR[im=i];
 	if(im<0){
-		if(n==0) t+="<div align=center><p><b>No se encontraron resultados.</b></div><p>\n";
+		if(n==0) t+="<div align="center"><p><b>No se encontraron resultados.</b></div><p>\n";
 		break;
 	}
 	AR[im]=0;
@@ -633,25 +633,25 @@ function SS(){
 <center>
 <form method="get" action="sssimplyred.html" accept-charset="utf-8">
   <div style="margin:5px 0px 5px 3px">
-    <input type=text name="s" size=18 onKeyDown="if(event.keyCode==13)return NS()">
-    <button style="color: #fff; font-size:16px; font-weight: bold; border: #FF0000 2px solid; background-color: #FA8072" onClick="return NS()">Buscar</button>
+    <input type="text" name="s" size="18" onkeydown="if(event.keyCode==13)return NS()">
+    <button style="color: #fff; font-size:16px; font-weight: bold; border: #FF0000 2px solid; background-color: #FA8072" onclick="return NS()">Buscar</button>
   </div>
 </form>
 </center> 
 
 <script>
 <!--
-if(window.opener) document.write("<div align=center><a href='javascript:window.close()'>Close window</a></div><p>");
+if(window.opener) document.write("<div align="center"><a href='javascript:window.close()'>Close window</a></div><p>");
 //-->
 </script>
-<div id=txt>
+<div id="txt">
 <script>
 <!--
 SS();
 document.write( MT() );
 //-->
 </script>
-<div align=center>
+<div align="center">
 <p>
 <script>
 <!--
