@@ -1,7 +1,7 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+const port = process.env.PORT || 3001;
 
 app.use(express.static(__dirname+'/'));
 app.set('x-powered-by', false);
-console.log('escuchando en el puerto 3001');
-app.listen(3001);
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
