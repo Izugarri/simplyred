@@ -4,9 +4,19 @@
   "description": "Simplyred",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://git.cloudno.de/git/videomusicajmc/7495-bd52324bd6752ff942a325c0761a11cc.git"
+  },
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
