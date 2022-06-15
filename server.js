@@ -1,6 +1,6 @@
-const express = require("express");
+const express = require('express');
 const path = require('path')
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 10000
 
 express()
   .set('x-powered-by', false) // hide x-powered-by header!
