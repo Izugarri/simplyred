@@ -9,7 +9,7 @@ app.use(async (ctx) => {
     });
   } catch {
     ctx.response.status = 404;
-    ctx.response.body = "404 File not found";
+    ctx.response.body = "404 - No found - Página no encontrada";
   }
 });
 
