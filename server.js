@@ -12,7 +12,8 @@ var options = {
   maxAge: '1m',
   redirect: false
 }
-app.use(express.static('./', options))
+app.use(express.static('./', options));
+app.set('x-powered-by', false)
 
 // Catch all handler for all other request.
 app.use('*', (req,res) => {
@@ -30,7 +31,7 @@ app.use('*', (req,res) => {
 })
 
 module.exports = app
-app.set('x-powered-by', false);
+
 const port = process.env.PORT || 3000
 
 app.listen(port)
