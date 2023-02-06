@@ -30,9 +30,7 @@ app.use('*', (req,res) => {
 })
 
 module.exports = app
-
+app.set('x-powered-by', false);
 const port = process.env.PORT || 3000
 
-app.listen(port, () => {
-  console.log(`Escuchando en puerto http://localhost:${port}`)
-})
+app.listen(port)
