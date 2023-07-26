@@ -1,19 +1,15 @@
-# Dockerfile
+# Pull base image
+FROM debian:latest
 
-# Use Alpine Linux as the base image
-# we're using it since it's tiny in size (~5 MB)
-FROM python:3.9.6-alpine
+# Dockerfile Maintainer
+MAINTAINER Jan Wagner "waja@cyconet.org"
 
-# Set the working directory
-WORKDIR /app
+# Install nginx and adjust nginx config to stay in foreground
+RUN apt-get update && apt-get install --no-install-recommends -y nginx; \
+ echo "daemon off;" >> /etc/nginx/nginx.conf
 
-
-
-# Copy over the source code
-COPY . .
-
-# Expose the port
+# Expose HTTP
 EXPOSE 80
 
-# Run the server
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+# Start nginx
+CMD ["/usr/sbin/nginx"]
