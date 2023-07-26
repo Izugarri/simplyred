@@ -1,8 +1,7 @@
 # Pull base image
 FROM debian:latest
 
-# Dockerfile Maintainer
-MAINTAINER Jan Wagner "waja@cyconet.org"
+COPY ./ /usr/share/nginx/html
 
 # Install nginx and adjust nginx config to stay in foreground
 RUN apt-get update && apt-get install --no-install-recommends -y nginx; \
