@@ -1,3 +1,4 @@
-FROM pierrezemb/gostatic
-COPY ./ /srv/http/
-EXPOSE 8043
+FROM nginx:stable-alpine
+COPY . /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
