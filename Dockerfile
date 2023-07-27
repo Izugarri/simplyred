@@ -1,3 +1,3 @@
 FROM pierrezemb/gostatic
 COPY ./ /srv/http/
-EXPOSE 80
+EXPOSE 8043
