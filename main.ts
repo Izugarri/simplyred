@@ -1,9 +1,14 @@
-Deno.serve(() => {
-  return new Response("Static content that rarely changes", {
-    headers: {
-      "Cache-Control": "public, s-maxage=1",
-      // This response survives redeployments
-      "Deno-CDN-Cache-Control": "public, s-maxage=1",,
-    },
-  });
+import { serveDir } from "jsr:@std/http/file-server";
+
+Deno.serve((req) => {
+  const pathname = new URL(req.url).pathname;
+
+  // Servir archivos estáticos desde una carpeta llamada "x"
+  if (pathname.startsWith("/")) {
+    return serveDir(req, {
+      fsRoot: "./", // Directorio donde están tus archivos .html y .css
+    });
+  }
+
+  return new Response("404: Not Found", { status: 404 });
 });
