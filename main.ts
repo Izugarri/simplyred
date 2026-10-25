@@ -1,14 +1,16 @@
 import { serveDir } from "jsr:@std/http/file-server";
 
-Deno.serve((req) => {
-  return serveDir(req, {
-    fsRoot: "./", // Carpeta que contiene los archivos
+Deno.serve(async (req) => {
+  const url = new URL(req.url);
+
+  // 1. Obtenemos la respuesta por defecto de serveDir
+  const response = await serveDir(req, {
+    fsRoot: "./", 
     showDirListing: true,
     cleanUrls: true,    
   });
-});
 
- // Clonamos la respuesta para poder modificar sus encabezados (son inmutables por defecto)
+  // Clonamos la respuesta para poder modificar sus encabezados (son inmutables por defecto)
   const newResponse = new Response(response.body, response);
 
   // 2. Si la ruta es de la carpeta "control", PROHIBIMOS el caché
